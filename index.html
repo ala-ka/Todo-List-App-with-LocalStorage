@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>My Todo List</h2>
+    
+    <div class="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task">
+      <button id="add-btn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button id="all" class="active">All</button>
+      <button id="active">Active</button>
+      <button id="completed">Completed</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <div class="bottom-actions">
+      <button id="edit-btn" type="button" disabled>Edit Selected</button>
+      <button id="delete-btn" type="button" disabled>Delete Selected</button>
+    </div>
+  </div>
+
+  <!-- Modal for edit -->
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <h3>Edit Task</h3>
+      <input type="text" id="edit-input">
+      <div class="modal-buttons">
+        <button id="save-edit">Save</button>
+        <button id="cancel-edit">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
